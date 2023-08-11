@@ -43,6 +43,8 @@
 
     <!-- js -->
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery-3.4.1.min.js" defer></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.matchHeight.js" defer></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/common2023.js" defer></script>
 
     <!-- 場合によって必要 -->
     <!-- <meta name="robots" content="noindex,nofollow"> -->

@@ -8,6 +8,6 @@ jQuery(function($) {
             $('.anchor').click(scroll_func);
         });
     });
+
+    $('.reason_block').matchHeight();
 });
-
-

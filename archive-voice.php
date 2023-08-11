@@ -105,83 +105,12 @@ get_header('1'); ?>
                 if ($q->have_posts()) :
                     while ($q->have_posts()) : $q->the_post(); ?>
                         <?php
-                        // $male_profile_images = [
-                        //     "/assets/img/voice/profile_icon/male_34_img.png",
-                        //     "/assets/img/voice/profile_icon/male_56_img.png",
-                        //     "/assets/img/voice/profile_icon/male_78_img.png",
-                        //     "/assets/img/voice/profile_icon/male_910_img.png"
-                        // ];
-
-                        // $female_profile_images = [
-                        //     "/assets/img/voice/profile_icon/female_34_img.png",
-                        //     "/assets/img/voice/profile_icon/female_56_img.png",
-                        //     "/assets/img/voice/profile_icon/female_78_img.png",
-                        //     "/assets/img/voice/profile_icon/female_910_img.png"
-                        // ];
-
-                        // $default_img = "/assets/img/voice/profile_icon/default_img.png";
-
                         $voice_add = SCF::get("voice_add");
                         $voice_age = SCF::get("voice_age");
                         $voice_gender = SCF::get("voice_gender");
 
                         $trim_age = rtrim($voice_age, "代");
                         $int_age = (int) $trim_age;
-
-
-                        // switch ($int_age) {
-                        //     case $int_age == 20 || $int_age == 30 || $int_age == 40:
-                        //         if ($voice_gender == "男性") {
-                        //             $img = $male_profile_images[0];
-                        //         } else if ($voice_gender == "女性") {
-                        //             $img = $female_profile_images[0];
-                        //         } else {
-                        //             $img = $default_img;
-                        //         }
-                        //         break;
-                        //     case $int_age == 50 || $int_age == 60:
-                        //         if ($voice_gender == "男性") {
-                        //             $img = $male_profile_images[1];
-                        //         } else if ($voice_gender == "女性") {
-                        //             $img = $female_profile_images[1];
-                        //         } else {
-                        //             $img = $default_img;
-                        //         }
-                        //         break;
-                        //     case $int_age == 70 || $int_age == 80:
-                        //         if ($voice_gender == "男性") {
-                        //             $img = $male_profile_images[2];
-                        //         } else if ($voice_gender == "女性") {
-                        //             $img = $female_profile_images[2];
-                        //         } else {
-                        //             $img = $default_img;
-                        //         }
-                        //         break;
-                        //     case $int_age == 90 || $int_age == 100:
-                        //         if ($voice_gender == "男性") {
-                        //             $img = $male_profile_images[3];
-                        //         } else if ($voice_gender == "女性") {
-                        //             $img = $female_profile_images[3];
-                        //         } else {
-                        //             $img = $default_img;
-                        //         }
-                        //         break;
-                        //     default:
-                        //         $img = $default_img;
-                        //         break;
-                        // }
-
-                        // $voice_service = SCF::get("voice_service");
-
-                        // $service_imgs = [
-                        //     "/assets/img/voice/service_icon/omakase_img.png",
-                        //     "/assets/img/voice/service_icon/tax_return_img.png",
-                        //     "/assets/img/voice/service_icon/tax_diagnosis_img.png",
-                        // ];
-                        // if ($int_age <= 0) {
-                        //     $post_id = get_the_ID();
-                        //     wp_delete_post($post_id, true);
-                        // }
                         ?>
                         <?php if (!empty($voice_age)) { ?>
                             <li class="voice_card">

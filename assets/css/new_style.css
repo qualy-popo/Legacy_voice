@@ -2369,6 +2369,7 @@ inherit_specialist_sec start =============== */
   position: relative;
 }
 
+<<<<<<< HEAD
 .voice_card .profile > span:not(:last-child) {
   margin-right: 10px;
 }
@@ -2378,6 +2379,17 @@ inherit_specialist_sec start =============== */
   position: absolute;
   top: 3px;
   right: -12px;
+=======
+.voice_card .profile > span:not(:first-child){
+    margin-left: 10px;
+}
+
+.voice_card .profile > span:not(:first-child)::before{
+    content: "/";
+    position: absolute;
+    top: 3px;
+    left: -12px;
+>>>>>>> 9073d504406f715adb11e632b5ab6422688b88d6
 }
 
 .voice_card .card_body,
