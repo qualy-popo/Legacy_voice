@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+/* ===============================
+Font Family
+=============================== */
+@font-face {
+    font-family: ヒラギノUD角ゴ Std W3;
+    src: url(../fonts/hiraud-kakugo-stdw3.otf) format("truetype");
+}
+
+.fz-hiragino-n {
+    font-family: ヒラギノUD角ゴ Std W3;
+}
+
+@font-face {
+    font-family: ヒラギノUD角ゴ Std W6;
+    src: url(../fonts/hiraud-kakugo-stdw6.otf) format("truetype");
+}
+
+.fz-fot-n {
+    font-family: "ヒラギノUD角ゴ Std W3";
+    font-weight: 400;
+}
+
+.fz-fot-b {
+    font-family: "ヒラギノUD角ゴ Std W6";
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: HiraKakuPro-W6;
+    src: url(../fonts/HiraKakuPro-W6.otf);
+}
+
+@font-face {
+    font-family: HiraKakuPro-W3;
+    src: url(../fonts/HiraKakuPro-W3.otf);
+}
+
+/* ===============================
+Font weight
+=============================== */
+.fz-n {
+    font-weight: normal !important;
+}
+
+.fz-m {
+    font-weight: 500 !important;
+}
+
+.fz-b {
+    font-weight: bold !important;
+}
+
+/* ===============================
+Font size
+=============================== */
+.fz-10 {
+    font-size: 1rem !important;
+}
+
+.fz-11 {
+    font-size: 1.1rem !important;
+}
+
+.fz-12 {
+    font-size: 1.2rem !important;
+}
+
+.fz-12m {
+    font-size: 1.25rem !important;
+}
+
+.fz-13 {
+    font-size: 1.3rem !important;
+}
+
+.fz-14 {
+    font-size: 1.4rem !important;
+}
+
+.fz-15 {
+    font-size: 1.5rem !important;
+}
+
+.fz-16 {
+    font-size: 1.6rem !important;
+}
+
+.fz-17 {
+    font-size: 1.7rem !important;
+}
+
+.fz-18 {
+    font-size: 1.8rem !important;
+}
+
+.fz-19 {
+    font-size: 1.9rem !important;
+}
+
+.fz-20 {
+    font-size: 2rem !important;
+}
+
+.fz-21 {
+    font-size: 2.1rem !important;
+}
+
+.fz-22 {
+    font-size: 2.2rem !important;
+}
+
+.fz-23 {
+    font-size: 2.3rem !important;
+}
+
+.fz-24 {
+    font-size: 2.4rem !important;
+}
+
+.fz-25 {
+    font-size: 2.5rem !important;
+}
+
+.fz-26 {
+    font-size: 2.6rem !important;
+}
+
+.fz-27 {
+    font-size: 2.7rem !important;
+}
+
+.fz-28 {
+    font-size: 2.8rem !important;
+}
+
+.fz-29 {
+    font-size: 2.9rem !important;
+}
+
+.fz-30 {
+    font-size: 3rem !important;
+}
+
+.fz-31 {
+    font-size: 3.1rem !important;
+}
+
+.fz-32 {
+    font-size: 3.2rem !important;
+}
+
+.fz-33 {
+    font-size: 3.3rem !important;
+}
+
+.fz-34 {
+    font-size: 3.4rem !important;
+}
+
+.fz-35 {
+    font-size: 3.5rem !important;
+}
+
+.fz-36 {
+    font-size: 3.6rem !important;
+}
+
+.fz-37 {
+    font-size: 3.7rem !important;
+}
+
+.fz-38 {
+    font-size: 3.8rem !important;
+}
+
+.fz-39 {
+    font-size: 3.9rem !important;
+}
+
+.fz-40 {
+    font-size: 4rem !important;
+}
+
+.fz-45 {
+    font-size: 4.5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .fz-6-sp {
+        font-size: .65rem !important;
+    }
+
+    .fz-7-sp {
+        font-size: .7rem !important;
+    }
+
+    .fz-10-sp {
+        font-size: 1rem !important;
+    }
+
+    .fz-11-sp {
+        font-size: 1.1rem !important;
+    }
+
+    .fz-12-sp {
+        font-size: 1.2rem !important;
+    }
+
+    .fz-13-sp {
+        font-size: 1.3rem !important;
+    }
+
+    .fz-14-sp {
+        font-size: 1.4rem !important;
+    }
+
+    .fz-15-sp {
+        font-size: 1.5rem !important;
+    }
+
+    .fz-16-sp {
+        font-size: 1.6rem !important;
+    }
+
+    .fz-17-sp {
+        font-size: 1.7rem !important;
+    }
+
+    .fz-18-sp {
+        font-size: 1.8rem !important;
+    }
+
+    .fz-19-sp {
+        font-size: 1.9rem !important;
+    }
+
+    .fz-20-sp {
+        font-size: 2rem !important;
+    }
+
+    .fz-21-sp {
+        font-size: 2.1rem !important;
+    }
+
+    .fz-22-sp {
+        font-size: 2.2rem !important;
+    }
+
+    .fz-23-sp {
+        font-size: 2.3rem !important;
+    }
+
+    .fz-24-sp {
+        font-size: 2.4rem !important;
+    }
+
+    .fz-25-sp {
+        font-size: 2.5rem !important;
+    }
+
+    .fz-26-sp {
+        font-size: 2.6rem !important;
+    }
+
+    .fz-27-sp {
+        font-size: 2.7rem !important;
+    }
+
+    .fz-28-sp {
+        font-size: 2.8rem !important;
+    }
+
+    .fz-29-sp {
+        font-size: 2.9rem !important;
+    }
+
+    .fz-30-sp {
+        font-size: 3rem !important;
+    }
+
+    .fz-31-sp {
+        font-size: 3.1rem !important;
+    }
+
+    .fz-32-sp {
+        font-size: 3.2rem !important;
+    }
+
+    .fz-33-sp {
+        font-size: 3.3rem !important;
+    }
+
+    .fz-34-sp {
+        font-size: 3.4rem !important;
+    }
+
+    .fz-35-sp {
+        font-size: 3.5rem !important;
+    }
+
+    .fz-36-sp {
+        font-size: 3.6rem !important;
+    }
+
+    .fz-37-sp {
+        font-size: 3.7rem !important;
+    }
+
+    .fz-38-sp {
+        font-size: 3.8rem !important;
+    }
+
+    .fz-39-sp {
+        font-size: 3.9rem !important;
+    }
+
+    .fz-40-sp {
+        font-size: 4rem !important;
+    }
+
+    .fz-45-sp {
+        font-size: 4.5rem !important;
+    }
+}

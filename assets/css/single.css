@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/* Voice Detail Start */
+.m-w920 {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.voice_detail_bg {
+  background-color: #faf7f7;
+  padding: 40px 40px;
+  margin-top: 50px;
+}
+
+.voice_detail_flex .voice_detail_card {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  font-family: "ヒラギノUD角ゴ Std W3";
+}
+
+
+.voice_detail_card .voice_detail_head {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 320px;
+}
+
+.voice_detail_card .card_head.one_fr {
+  grid-template-columns: 1fr;
+}
+
+.voice_detail_card .profile_block,
+.voice_detail_card .service_block {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 0 20px 0;
+  font-weight: bold;
+}
+
+.voice_detail_card .profile_picture {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background: #faf7f7;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.voice_detail_card .profile_picture img {
+  margin: 0 auto;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.voice_detail_card .address,
+.voice_detail_card .apperance,
+.voice_detail_card .service_used,
+.voice_detail_card .service_name {
+  text-align: center;
+  line-height: 1.68;
+}
+
+.apperance .age {
+  margin-right: 10px;
+}
+
+.voice_detail_card .service_picture {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+}
+
+.voice_detail_card .service_picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.voice_detail_card .card_body {
+  margin-top: 10px;
+  font-size: 14px;
+  width: 510px;
+}
+
+.voice_detail_card .evaluation_block,
+.voice_detail_card .reason_block,
+.voice_detail_card .good_point_block {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.voice_detail_card .evaluation_block {
+  margin-bottom: 10px;
+}
+
+/* rating */
+.rating {
+  display: inline-block;
+}
+
+.stars {
+  position: relative;
+}
+
+.star {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #c8c6c6;
+  clip-path: polygon(50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%);
+}
+
+.star.rated {
+  background-color: #f7d100;
+}
+
+/* rating end */
+.voice_detail_card .evaluation_txt,
+.voice_detail_card .reason_txt,
+.voice_detail_card .god_point_txt {
+  width: 120px;
+}
+
+.voice_detail_card .evaluation_txt p,
+.voice_detail_card .reason_txt p,
+.voice_detail_card .god_point_txt p {
+  width: 100%;
+  color: #543f22;
+  text-align: center;
+  border: 1.5px solid #543f22;
+  border-radius: 100vmax;
+  padding: 5px 0 5px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.voice_detail_card .reason_desc,
+.voice_detail_card .good_points {
+  display: flex;
+  gap: 8px;
+}
+
+.voice_detail_card .desc_txt {
+  color: #010101;
+  text-align: center;
+  border: 2px solid #a89879;
+  border-radius: 3px;
+  padding: 5px 5px 5px;
+  margin-bottom: 5px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.voice_detail_card .good_point {
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 5px 5px;
+  margin-bottom: 5px;
+  background: #ae0808;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.voice_detail_card .voice_detail_img {
+  border: 2px solid #a89879;
+  border-radius: 3px;
+}
+
+.voice_detail_card .voice_detail_img img {
+  width: 100%;
+}
+
+.voice_detail_card .voice_detail_txt {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+.voice_detail_card .card_footer {
+  margin-top: 20px;
+}
+
+.voice_detail_card .view_details {
+  font-size: 16px;
+  color: #c10000;
+  text-align: right;
+  position: relative;
+  padding-right: 20px;
+}
+
+.voice_detail_card .view_details::after {
+  content: "";
+  background: url(../img/legacy_voice/detail_more_arrow.png) no-repeat;
+  width: 8px;
+  height: 12px;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+
+
+@media screen and (max-width: 620px) {}
+
+/* Voice Detail End*/
