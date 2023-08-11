@@ -37,3 +37,4 @@ $("#modal").click(function () {
 // ----- Voice match-height ------
 $(".voice_card .reason_block").matchHeight();
 $(".voice_card .good_point_block").matchHeight();
+$(".voice_card .voice_txt").matchHeight();
