@@ -2369,17 +2369,6 @@ inherit_specialist_sec start =============== */
   position: relative;
 }
 
-<<<<<<< HEAD
-.voice_card .profile > span:not(:last-child) {
-  margin-right: 10px;
-}
-
-.voice_card .profile > span:not(:last-child):after {
-  content: "/";
-  position: absolute;
-  top: 3px;
-  right: -12px;
-=======
 .voice_card .profile > span:not(:first-child){
     margin-left: 10px;
 }
@@ -2389,7 +2378,6 @@ inherit_specialist_sec start =============== */
     position: absolute;
     top: 3px;
     left: -12px;
->>>>>>> 9073d504406f715adb11e632b5ab6422688b88d6
 }
 
 .voice_card .card_body,
@@ -2401,23 +2389,23 @@ inherit_specialist_sec start =============== */
   margin-bottom: 20px;
 }
 
-.voice_card .evaluation_block {
+.evaluation_block {
   padding: 20px 0 15px;
   border-bottom: 2px solid #543f22;
 }
 
 /* rating */
-.voice_card .rating {
+.rating {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.voice_card .stars {
+.stars {
   position: relative;
 }
 
-.voice_card .star {
+.star {
   display: inline-block;
   width: 22px;
   height: 21px;
@@ -2444,22 +2432,10 @@ inherit_specialist_sec start =============== */
   background-image: linear-gradient(90deg, #f7d100 52%, transparent 48%);
 }
 
-.voice_card .rating_num {
+.rating_num {
   font-size: 20px;
 }
 /* rating end */
-
-/* 
-.voice_card .evaluation_txt p,
-.voice_card .reason_txt p,
-.voice_card .god_point_txt p {
-    width: 100%;
-    color: #543f22;
-    text-align: center;
-    border: 1.5px solid #543f22;
-    border-radius: 100vmax;
-    padding: 7px 0 5px;
-} */
 
 .voice_card .desc_txt,
 .voice_card .good_point {
@@ -2540,7 +2516,8 @@ inherit_specialist_sec start =============== */
 
 /* voice detail start */
 .voice_page_detail {
-  font-family: ヒラギノUD角ゴ Std W6;
+  font-family: HiraKakuPro-W6;
+  font-size: 16px;
 }
 
 .m-w920 {
@@ -2565,6 +2542,7 @@ inherit_specialist_sec start =============== */
 
 .detail_flex_list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -2572,7 +2550,7 @@ inherit_specialist_sec start =============== */
   margin-bottom: 40px;
 }
 
-.detail_flex_list .list01,
+/* .detail_flex_list .list01,
 .detail_flex_list .list02,
 .detail_flex_list .list03 {
   display: flex;
@@ -2587,11 +2565,36 @@ inherit_specialist_sec start =============== */
 .detail_flex_list .list03 .txt_content {
   letter-spacing: 0.32px;
   line-height: 1.7;
-}
+} */
 
 .detail_flex {
   padding-bottom: 20px;
-  border-bottom: 1px solid #543f22;
+  border-bottom: 2px solid #543f22;
 }
 
+.detail_eval_block{
+    padding: 20px 0;
+}
+
+.txt_content{
+    letter-spacing: 0.32px;
+    line-height: 1.7;
+    background: #fff;
+    padding: 17px 10px;
+}
+
+.tax_return > div{
+    position: relative;
+    padding-left: 65px;
+}
+
+.tax_return .omakase::after{
+    content: "";
+    background: url(../img/voice/omakase_img.png) no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
 /* voice detail end */

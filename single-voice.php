@@ -23,24 +23,46 @@ get_header('1'); ?>
                     <div class="voice_detail_flex_sec">
                         <p class="upper_txt mt20 mb20">利用サービス </p>
                         <div class="detail_flex_list detail_flex">
-                            <div class="list01">
-                                <div class="txt_img">
-                                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/voice/detail_img_01.png" />
+                            <div class="list tax_return">
+                                <div class="omakase">
+                                    <p class="txt_content">相続税申告</p>
                                 </div>
-                                <p class="txt_content">相続税申告</p>
                             </div>
-                            <div class="list02">
-                                <div class="txt_img">
-                                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/voice/detail_img_02.png" />
-                                </div>
+                            <div class="list">
                                 <p class="txt_content">不動産投資コンサルティング</p>
                             </div>
-                            <div class="list03">
-                                <div class="txt_img">
-                                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/voice/detail_img_03.png" />
-                                </div>
+                            <div class="list">
                                 <p class="txt_content">お助け税務調査</p>
                             </div>
+                        </div>
+                        <?php $scf_evaluation = SCF::get("voice_evaluation"); ?>
+                        <div class="detail_eval_block">
+
+                            <?php if ($scf_evaluation !== "非表示") {
+                                $trim_evaluation = trim($scf_evaluation, "点");
+                                $float_evaluation = (float) $trim_evaluation;
+                            ?>
+                                <?php if ($float_evaluation >= 0) { ?>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <?php
+                                            $rating = $float_evaluation;
+                                            for ($i = 1; $i <= 5; $i++) {
+                                                $class = '';
+                                                if ($i <= $rating) {
+                                                    $class = 'rated';
+                                                }
+                                                if ($i == ceil($rating) && $rating - floor($rating) == 0.5) {
+                                                    $class = 'half-rated';
+                                                }
+                                            ?>
+                                                <span class="star <?php echo $class; ?>"></span>
+                                            <?php } ?>
+                                        </div>
+                                        <p class="rating_num"><?php echo $float_evaluation ?></p>
+                                    </div>
+                                <?php } ?>
+                            <?php } ?>
                         </div>
                     </div>
 
