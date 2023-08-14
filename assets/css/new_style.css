@@ -2078,6 +2078,7 @@ inherit_specialist_sec start =============== */
   background-repeat: no-repeat;
   background: url(../img/voice/voice_mv_img.png) no-repeat;
   background-size: cover;
+  background-position: 22%;
 }
 
 .legacy_voice_mv .inner_tax_mv {
@@ -2491,7 +2492,7 @@ inherit_specialist_sec start =============== */
   background-size: contain;
   position: absolute;
   right: 0;
-  top: 1px;
+  top: 7px;
 }
 
 @media screen and (max-width: 920px) {
