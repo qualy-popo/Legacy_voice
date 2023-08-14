@@ -11,3 +11,15 @@ jQuery(function($) {
 
     $('.reason_block').matchHeight();
 });
+
+//Voice Detail Image Modal Box
+$(".voice_bg_img").click(function () {
+    $("#modal").html($(this).prop("outerHTML"));
+    $("#modal").fadeIn(200);
+    return false;
+  });
+  
+  $("#modal").click(function () {
+    $("#modal").fadeOut(200);
+    return false;
+  });

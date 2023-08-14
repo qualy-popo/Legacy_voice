@@ -207,7 +207,8 @@ get_header('1'); ?>
                 endif; ?>
             </ul>
             <!-- <div class="pagination mt50 mt30-sp">
-                <?php //wp_pagenavi(array('query' => $q)); ?>
+                <?php //wp_pagenavi(array('query' => $q)); 
+                ?>
             </div> -->
         </div>
     </section>

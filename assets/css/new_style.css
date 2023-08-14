@@ -2369,15 +2369,15 @@ inherit_specialist_sec start =============== */
   position: relative;
 }
 
-.voice_card .profile > span:not(:first-child){
-    margin-left: 10px;
+.voice_card .profile > span:not(:first-child) {
+  margin-left: 10px;
 }
 
-.voice_card .profile > span:not(:first-child)::before{
-    content: "/";
-    position: absolute;
-    top: 3px;
-    left: -12px;
+.voice_card .profile > span:not(:first-child)::before {
+  content: "/";
+  position: absolute;
+  top: 3px;
+  left: -12px;
 }
 
 .voice_card .card_body,
@@ -2546,69 +2546,125 @@ inherit_specialist_sec start =============== */
   gap: 20px;
 }
 
-.voice_detail_flex_sec {
-  margin-bottom: 40px;
-}
-
-/* .detail_flex_list .list01,
-.detail_flex_list .list02,
-.detail_flex_list .list03 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #fff;
-}
-
-.detail_flex_list .list01 .txt_content,
-.detail_flex_list .list02 .txt_content,
-.detail_flex_list .list03 .txt_content {
-  letter-spacing: 0.32px;
-  line-height: 1.7;
-} */
-
 .detail_flex {
   padding-bottom: 20px;
   border-bottom: 2px solid #543f22;
 }
 
-.detail_eval_block{
-    padding: 20px 0;
+.detail_eval_block {
+  padding: 20px 0;
 }
 
-.txt_content{
-    letter-spacing: 0.32px;
-    line-height: 1.7;
-    background: #fff;
-    padding: 17px 10px;
-    padding-left: 35px;
-    position: relative;
+.txt_content {
+  letter-spacing: 0.32px;
+  line-height: 1.7;
+  background: #fff;
+  padding: 17px 10px;
+  padding-left: 35px;
+  position: relative;
 }
 
-.txt_content::before{
-    display: inline-block;
-    content: "";
-    width: 60px;
-    height: 60px;
-    background: #c10000;
-    clip-path: circle(50% at 1% 50%);
-    position: absolute;
-    left: -3px;
-    top: 0;
+.txt_content::before {
+  display: inline-block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: #c10000;
+  clip-path: circle(50% at 1% 50%);
+  position: absolute;
+  left: -3px;
+  top: 0;
 }
 
-.tax_return > div{
-    position: relative;
-    padding-left: 30px;
+.tax_return > div {
+  position: relative;
+  padding-left: 30px;
 }
 
-.tax_return .omakase::after{
-    content: "";
-    background: url(../img/voice/omakase_img.png) no-repeat;
-    width: 65px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0px;
+.tax_return .omakase::after {
+  content: "";
+  background: url(../img/voice/omakase_img.png) no-repeat;
+  width: 65px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0px;
 }
+
+.detail_reasons_list,
+.detail_points_list {
+  display: flex;
+  gap: 20px;
+}
+
+.detail_reasons_list .detail_reason,
+.detail_points_list .detail_point {
+  width: calc((100% - 40px) / 3);
+  padding: 8px 0;
+  background: #fff;
+  color: #010101;
+  text-align: center;
+  border: 1px solid #a79b8c;
+}
+
+.detail_voice_comment {
+  margin-top: 20px;
+  word-break: break-word;
+  line-height: 1.5;
+  font-family: "HiraKakuPro-W3";
+}
+
+.voice_content_bg {
+  background: #fff;
+  margin-top: 40px;
+  border: 1px solid #a89883;
+}
+
+.voice_content_bg .voice_bg_img {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Model Box */
+.voice_content_bg {
+  background: #fff;
+  margin-top: 40px;
+  border: 1px solid #a89883;
+}
+
+.voice_content_bg .voice_bg_img {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100% !important;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+#modal img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 9999;
+  max-width: 90%;
+  max-height: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
 /* voice detail end */

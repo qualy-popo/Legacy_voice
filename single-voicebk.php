@@ -66,55 +66,50 @@ get_header('1'); ?>
                         </div>
                         <div class="detail_flex_list_02 detail_flex">
                             <div class="reason_flex">
-                                <?php $voice_reason = SCF::get('voice_reason'); ?>
-                                <?php if (!empty($voice_reason)) : ?>
-                                    <p class="upper_txt mb20">選んだ理由</p>
-                                <?php endif ?>
+                                <p class="upper_txt mt20 mb20">選んだ理由</p>
                                 <div class="detail_reasons_list">
-                                    <?php if (!empty($voice_reason)) : ?>
-                                        <?php foreach ($voice_reason as $reason) : ?>
-                                            <div class="detail_reason">
-                                                <?php echo esc_html($reason); ?>
-                                            </div>
-                                        <?php endforeach; ?>
-                                    <?php endif; ?>
+                                    <div class="detail_reason">
+                                        専門知識がある
+                                    </div>
+                                    <div class="detail_reason">
+                                        対応が良い
+                                    </div>
+                                    <div class="detail_reason">
+                                        提案内容が良い
+                                    </div>
                                 </div>
-                                <div class="good_point_flex">
-                                    <?php $voice_point = SCF::get('voice_point'); ?>
-                                    <?php if (!empty($voice_point)) : ?>
-                                        <p class="upper_txt mt20 mb20">よかった点</p>
-                                    <?php endif ?>
-                                    <div class="detail_points_list">
-                                        <?php if (!empty($voice_point)) : ?>
-                                            <?php foreach ($voice_point as $point) : ?>
-                                                <div class="detail_point">
-                                                    <?php echo esc_html($point); ?>
-                                                </div>
-                                            <?php endforeach; ?>
-                                        <?php endif; ?>
+                            </div>
+                            <div class="good_point_flex">
+                                <p class="upper_txt mt20 mb20">よかった点</p>
+                                <div class="detail_points_list">
+                                    <div class="detail_point">
+                                        親身になってくれた
+                                    </div>
+                                    <div class="detail_point">
+                                        スピード感がある
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <?php
-                        $voice_comment = SCF::get('voice_comment');
-                        if (!empty($voice_comment)) { ?>
-                            <div class="detail_voice_comment"><?php echo $voice_comment; ?></div>
-                        <?php } ?>
-                        <?php
-                        $voice_img_gp = SCF::get('voice_img_gp');
-                        foreach ($voice_img_gp as $fields) { ?>
-                            <?php $voice_img = wp_get_attachment_image_src($fields['voice_img'], 'full'); ?>
-                            <?php if (!empty($voice_img)) { ?>
-                                <div class="voice_content_bg mt40">
-                                    <a href="javascript:void(0);" class="voice_bg_img">
-                                        <img src="<?php echo $voice_img[0]; ?>" alt="お手紙画像">
-                                    </a>
-                                    <div id="modal"></div>
-                                </div>
-                            <?php } ?>
-                        <?php } ?>
                     </div>
+                    <?php
+                    $voice_comment = SCF::get('voice_comment');
+                    if (!empty($voice_comment)) { ?>
+                        <div class="voice_comment"><?php echo $voice_comment; ?></div>
+                    <?php } ?>
+                    <?php
+                    $voice_img_gp = SCF::get('voice_img_gp');
+                    foreach ($voice_img_gp as $fields) { ?>
+                        <?php $voice_img = wp_get_attachment_image_src($fields['voice_img'], 'full'); ?>
+                        <?php if (!empty($voice_img)) { ?>
+                            <div class="voice_content_bg mt40">
+                                <a href="javascript:void(0);" class="voice_bg_img">
+                                    <img src="<?php echo $voice_img[0]; ?>" alt="お手紙画像">
+                                </a>
+                                <div id="modal"></div>
+                            </div>
+                        <?php } ?>
+                    <?php } ?>
                 </div>
                 <div class="relation-btn">
                     <div class="btn-block">
@@ -124,6 +119,7 @@ get_header('1'); ?>
                             <div class="btn prev-btn">
                                 <a href="<?php echo get_permalink($prev_post->ID) ?>" rel="prev">前の投稿</a>
                             </div>
+
                         <?php } ?>
                     </div>
                     <div class="btn-block mid">
@@ -141,6 +137,7 @@ get_header('1'); ?>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 </main>
 <?php get_footer(); ?>
