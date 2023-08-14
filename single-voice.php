@@ -145,7 +145,7 @@ get_header('1'); ?>
                         foreach ($voice_img_gp as $fields) { ?>
                             <?php $voice_img = wp_get_attachment_image_src($fields['voice_img'], 'full'); ?>
                             <?php if (!empty($voice_img)) { ?>
-                                <div class="voice_content_bg mt40">
+                                <div class="voice_content_bg mt20">
                                     <a href="javascript:void(0);" class="voice_bg_img">
                                         <img src="<?php echo $voice_img[0]; ?>" alt="お手紙画像">
                                     </a>
