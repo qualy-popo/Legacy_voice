@@ -2877,4 +2877,58 @@ inherit_specialist_sec start =============== */
   opacity: 0.7;
 }
 
+@media screen and (max-width: 640px) {
+  .voice_page_detail .relation-btn {
+    margin-bottom: 50px;
+  }
+
+  .voice_page_detail .relation-btn .btn02 a {
+    font-size: 16px;
+    width: 130px;
+    padding: 12px 15px 12px 15px;
+  }
+
+  .voice_page_detail .relation-btn .prev-btn a,
+  .voice_page_detail .relation-btn .next-btn a {
+    font-size: 16px;
+  }
+
+  .voice_page_detail .relation-btn .prev-btn a:after {
+    width: 9px;
+    height: 14px;
+  }
+
+  .voice_page_detail .relation-btn .next-btn a:after {
+    width: 9px;
+    height: 14px;
+  }
+
+  .voice_page_detail .relation-btn .prev-btn a {
+    padding: 4px 0 4px 18px;
+  }
+
+  .voice_page_detail .relation-btn .next-btn a {
+    padding: 4px 18px 4px 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .voice_page_detail .relation-btn .btn02 a {
+    font-size: 14px;
+    width: 120px;
+    padding: 12px 15px 12px 15px;
+  }
+
+  .voice_page_detail .relation-btn .prev-btn a,
+  .voice_page_detail .relation-btn .next-btn a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .voice_page_detail .relation-btn .btn02 a {
+    width: 100px;
+    padding: 12px 7px 12px 7px;
+  }
+}
 /* pagination end */
