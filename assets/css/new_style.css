@@ -2732,4 +2732,20 @@ inherit_specialist_sec start =============== */
   object-fit: contain;
 }
 
+@media screen and (max-width: 640px) {
+  .detail_reasons_list,
+  .detail_points_list {
+    flex-direction: column;
+  }
+
+  .detail_reasons_list .detail_reason,
+  .detail_points_list .detail_point {
+    width: 100%;
+  }
+
+  .voice_detail_bg {
+    padding: 20px 20px 40px;
+  }
+}
+
 /* voice detail end */
