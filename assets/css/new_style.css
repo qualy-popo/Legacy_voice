@@ -2514,6 +2514,117 @@ inherit_specialist_sec start =============== */
 
 /* Voice Page End */
 
+.detail_eval_block {
+  padding: 20px 0;
+}
+
+.txt_content {
+  letter-spacing: 0.32px;
+  line-height: 1.7;
+  background: #fff;
+  padding: 7px 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.txt_content::before {
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #c10000;
+  clip-path: circle(50% at 1% 50%);
+  position: absolute;
+  left: -7px;
+  top: 0;
+}
+
+.tax_return > div {
+  position: relative;
+  padding-left: 25px;
+}
+
+.tax_return .omakase::after,
+.tax_return .inherit_return::after,
+.tax_return .inherit_procedure::after,
+.tax_return .estate_sale::after,
+.tax_return .safe_planning::after,
+.tax_return .tax_diagnosis::after,
+.tax_return .estate_consult::after,
+.tax_return .estate_investment::after,
+.tax_return .business_succession::after,
+.tax_return .gift_support::after,
+.tax_return .notarized::after,
+.tax_return .civil_trust::after,
+.tax_return .corporate_use::after,
+.tax_return .landlords::after,
+.tax_return .tax_refund::after,
+.tax_return .tax_investigation::after,
+.tax_return .teacher_inheritance::after {
+  content: "";
+  background: url(../img/voice/tax_return_img01.png) no-repeat;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.tax_return .inherit_return::after {
+  background: url(../img/voice/tax_return_img02.png) no-repeat;
+}
+.tax_return .inherit_procedure::after {
+  background: url(../img/voice/tax_return_img03.png) no-repeat;
+}
+.tax_return .estate_sale::after {
+  background: url(../img/voice/tax_return_img04.png) no-repeat;
+}
+.tax_return .safe_planning::after {
+  background: url(../img/voice/invest_consult_img01.png) no-repeat;
+}
+.tax_return .tax_diagnosis::after {
+  background: url(../img/voice/invest_consult_img02.png) no-repeat;
+}
+.tax_return .estate_consult::after {
+  background: url(../img/voice/invest_consult_img03.png) no-repeat;
+}
+.tax_return .estate_investment::after {
+  background: url(../img/voice/invest_consult_img04.png) no-repeat;
+}
+.tax_return .business_succession::after {
+  background: url(../img/voice/invest_consult_img05.png) no-repeat;
+}
+.tax_return .gift_support::after {
+  background: url(../img/voice/invest_consult_img06.png) no-repeat;
+}
+.tax_return .notarized::after {
+  background: url(../img/voice/invest_consult_img07.png) no-repeat;
+}
+.tax_return .civil_trust::after {
+  background: url(../img/voice/invest_consult_img08.png) no-repeat;
+}
+.tax_return .corporate_use::after {
+  background: url(../img/voice/invest_consult_img09.png) no-repeat;
+}
+.tax_return .landlords::after {
+  background: url(../img/voice/invest_consult_img10.png) no-repeat;
+}
+.tax_return .tax_refund::after {
+  background: url(../img/voice/tax-investigate-img01.png) no-repeat;
+}
+.tax_return .tax_investigation::after {
+  background: url(../img/voice/tax-investigate-img02.png) no-repeat;
+}
+.tax_return .teacher_inheritance::after {
+  background: url(../img/voice/teacher_inherit_img01.png) no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .voice_detail_bg {
+    padding: 20px;
+  }
+}
+
 /* voice detail start */
 .voice_page_detail {
   font-family: HiraKakuPro-W6;
@@ -2549,118 +2660,6 @@ inherit_specialist_sec start =============== */
 .detail_flex {
   padding-bottom: 20px;
   border-bottom: 2px solid #543f22;
-}
-
-.detail_eval_block {
-  padding: 20px 0;
-}
-
-.txt_content{
-    letter-spacing: 0.32px;
-    line-height: 1.7;
-    background: #fff;
-    padding: 7px 10px;
-    padding-left: 25px;
-    position: relative;
-}
-
-.txt_content::before{
-    display: inline-block;
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: #c10000;
-    clip-path: circle(50% at 1% 50%);
-    position: absolute;
-    left: -7px;
-    top: 0;
-}
-
-.tax_return > div{
-    position: relative;
-    padding-left: 25px;
-}
-
-.tax_return .omakase::after,
-.tax_return .inherit_return::after,
-.tax_return .inherit_procedure::after,
-.tax_return .estate_sale::after,
-.tax_return .safe_planning::after,
-.tax_return .tax_diagnosis::after,
-.tax_return .estate_consult::after,
-.tax_return .estate_investment::after,
-.tax_return .business_succession::after,
-.tax_return .gift_support::after,
-.tax_return .notarized::after,
-.tax_return .civil_trust::after,
-.tax_return .corporate_use::after,
-.tax_return .landlords::after,
-.tax_return .tax_refund::after,
-.tax_return .tax_investigation::after,
-.tax_return .teacher_inheritance::after{
-  content: "";
-  background: url(../img/voice/tax_return_img01.png) no-repeat;
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  top: 0;
-  left: 0px;
-}
-
-.tax_return .inherit_return::after{
-  background: url(../img/voice/tax_return_img02.png) no-repeat;
-}
-.tax_return .inherit_procedure::after{
-  background: url(../img/voice/tax_return_img03.png) no-repeat;
-}
-.tax_return .estate_sale::after{
-  background: url(../img/voice/tax_return_img04.png) no-repeat;
-}
-.tax_return .safe_planning::after{
-  background: url(../img/voice/invest_consult_img01.png) no-repeat;
-}
-.tax_return .tax_diagnosis::after{
-  background: url(../img/voice/invest_consult_img02.png) no-repeat;
-}
-.tax_return .estate_consult::after{
-  background: url(../img/voice/invest_consult_img03.png) no-repeat;
-}
-.tax_return .estate_investment::after{
-  background: url(../img/voice/invest_consult_img04.png) no-repeat;
-}
-.tax_return .business_succession::after{
-  background: url(../img/voice/invest_consult_img05.png) no-repeat;
-}
-.tax_return .gift_support::after{
-  background: url(../img/voice/invest_consult_img06.png) no-repeat;
-}
-.tax_return .notarized::after{
-  background: url(../img/voice/invest_consult_img07.png) no-repeat;
-}
-.tax_return .civil_trust::after{
-  background: url(../img/voice/invest_consult_img08.png) no-repeat;
-}
-.tax_return .corporate_use::after{
-  background: url(../img/voice/invest_consult_img09.png) no-repeat;
-}
-.tax_return .landlords::after{
-  background: url(../img/voice/invest_consult_img10.png) no-repeat;
-}
-.tax_return .tax_refund::after{
-  background: url(../img/voice/tax-investigate-img01.png) no-repeat;
-}
-.tax_return .tax_investigation::after{
-  background: url(../img/voice/tax-investigate-img02.png) no-repeat;
-}
-.tax_return .teacher_inheritance::after{
-  background: url(../img/voice/teacher_inherit_img01.png) no-repeat;
-}
-
-
-@media screen and (max-width: 768px){
-  .voice_detail_bg{
-    padding: 20px;
-  }
 }
 
 .detail_reasons_list,
