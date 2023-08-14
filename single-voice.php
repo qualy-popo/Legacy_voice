@@ -16,53 +16,67 @@ get_header('1'); ?>
     <section>
         <div class="voice_container voice_detail">
             <div class="m-w920 mt50">
-                <div class="voice_head_txt">
-                    <p>川崎市 / 30代 / 女性</p>
+                <?php
+                $voice_add = SCF::get("voice_add");
+                $voice_age = SCF::get("voice_age");
+                $voice_gender = SCF::get("voice_gender");
+
+                $trim_age = rtrim($voice_age, "代");
+                $int_age = (int) $trim_age;
+                ?>
+                <div class="detail_head_txt">
+                    <p class="profile">
+                        <?php if (!empty($voice_add)) { ?>
+                            <span class="address"><?php echo ($voice_add); ?></span>
+                        <?php } ?>
+                        <span class="age"><?php echo ($int_age); ?>代</span>
+                        <span class="gender"><?php echo ($voice_gender); ?></span>
+                    </p>
                 </div>
                 <div class="voice_detail_bg">
                     <div class="voice_detail_flex_sec">
                         <p class="upper_txt mt20 mb20">利用サービス </p>
                         <div class="detail_flex_list detail_flex">
                             <?php
-                                $voice_service = SCF::get("voice_sevice");
+                            $voice_service = SCF::get("voice_sevice");
 
-                                foreach($voice_service as $service){
-            
-                                    if($service == "おまかせパック"){
-                                        $service_class = "omakase";
-                                    } else if($service == "相続税申告"){
-                                        $service_class = "inherit_return";
-                                    } else if($service == "相続手続き"){
-                                        $service_class = "inherit_procedure";
-                                    } else if($service == "不動産売買"){
-                                        $service_class = "estate_sale";
-                                    } else if($service == "安心プランニング"){
-                                        $service_class = "safe_planning";
-                                    } else if($service == "相続税診断"){
-                                        $service_class = "tax_diagnosis";
-                                    } else if($service == "不動産コンサルティング"){
-                                        $service_class = "estate_consult";
-                                    } else if($service == "不動産投資コンサルティング"){
-                                        $service_class = "estate_investment";
-                                    } else if($service == "事業承継"){
-                                        $service_class = "business_succession";
-                                    } else if($service == "贈与サポート"){
-                                        $service_class = "gift_support";
-                                    } else if($service == "【相続税診断付き】公正証書遺言作成"){
-                                        $service_class = "notarized";
-                                    } else if($service == "民事信託"){
-                                        $service_class = "civil_trust";
-                                    } else if($service == "法人活用簡易コンサル"){
-                                        $service_class = "corporate_use";
-                                    } else if($service == "地主の方へご提案"){
-                                        $service_class = "landlords";
-                                    } else if($service == "相続税還付"){
-                                        $service_class = "tax_refund";
-                                    } else if($service == "お助け税務調査"){
-                                        $service_class = "tax_investigation";
-                                    } else if($service == "相続のせんせい"){
-                                        $service_class = "teacher_inheritance";
-                                    } 
+                            foreach ($voice_service as $service) {
+
+                                if ($service == "おまかせパック") {
+                                    $service_class = "omakase";
+                                } else if ($service == "相続税申告") {
+                                    $service_class = "inherit_return";
+                                } else if ($service == "相続手続き") {
+                                    $service_class = "inherit_procedure";
+                                } else if ($service == "不動産売買") {
+                                    $service_class = "estate_sale";
+                                } else if ($service == "安心プランニング") {
+                                    $service_class = "safe_planning";
+                                } else if ($service == "相続税診断") {
+                                    $service_class = "tax_diagnosis";
+                                } else if ($service == "不動産コンサルティング") {
+                                    $service_class = "estate_consult";
+                                } else if ($service == "不動産投資コンサルティング") {
+                                    $service_class = "estate_investment";
+                                } else if ($service == "事業承継") {
+                                    $service_class = "business_succession";
+                                } else if ($service == "贈与サポート") {
+                                    $service_class = "gift_support";
+                                } else if ($service == "【相続税診断付き】公正証書遺言作成") {
+                                    $service_class = "notarized";
+                                } else if ($service == "民事信託") {
+                                    $service_class = "civil_trust";
+                                } else if ($service == "法人活用簡易コンサル") {
+                                    $service_class = "corporate_use";
+                                } else if ($service == "地主の方へご提案") {
+                                    $service_class = "landlords";
+                                } else if ($service == "相続税還付") {
+                                    $service_class = "tax_refund";
+                                } else if ($service == "お助け税務調査") {
+                                    $service_class = "tax_investigation";
+                                } else if ($service == "相続のせんせい") {
+                                    $service_class = "teacher_inheritance";
+                                }
                             ?>
                                 <div class="list tax_return">
                                     <div class="<?php echo $service_class; ?>">
@@ -70,8 +84,8 @@ get_header('1'); ?>
                                     </div>
                                 </div>
                             <?php
-                                }
-                            ?>                            
+                            }
+                            ?>
                         </div>
 
                         <?php $scf_evaluation = SCF::get("voice_evaluation"); ?>

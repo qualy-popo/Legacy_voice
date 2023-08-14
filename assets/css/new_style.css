@@ -2637,6 +2637,28 @@ inherit_specialist_sec start =============== */
   font-size: 16px;
 }
 
+.voice_detail .detail_head_txt {
+  font-size: 16px;
+  background: #543f22;
+  color: #fff;
+  padding: 12px 40px;
+}
+
+.voice_detail .profile > span {
+  position: relative;
+}
+
+.voice_detail .profile > span:not(:first-child) {
+  margin-left: 10px;
+}
+
+.voice_detail .profile > span:not(:first-child)::before {
+  content: "/";
+  position: absolute;
+  top: 3px;
+  left: -12px;
+}
+
 .m-w920 {
   max-width: 920px;
   margin: 0 auto;
@@ -2757,6 +2779,10 @@ inherit_specialist_sec start =============== */
 
   .voice_detail_bg {
     padding: 20px 20px 40px;
+  }
+
+  .voice_detail .detail_head_txt {
+    padding: 12px 20px;
   }
 }
 
