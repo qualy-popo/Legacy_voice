@@ -100,7 +100,7 @@ get_header('1'); ?>
                         <div class="btn btn02">
                             <a href="<?php echo home_url(); ?>/voice">一覧に戻る</a>
                         </div>
-                    </div>
+                  </div>
                     <div class="btn-block right">
                         <?php $next_post = get_adjacent_post(false, '', false);
                         if (!empty($next_post)) { ?>
