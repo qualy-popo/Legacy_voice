@@ -23,18 +23,57 @@ get_header('1'); ?>
                     <div class="voice_detail_flex_sec">
                         <p class="upper_txt mt20 mb20">利用サービス </p>
                         <div class="detail_flex_list detail_flex">
-                            <div class="list tax_return">
-                                <div class="omakase">
-                                    <p class="txt_content">相続税申告</p>
+                            <?php
+                                $voice_service = SCF::get("voice_sevice");
+
+                                foreach($voice_service as $service){
+            
+                                    if($service == "おまかせパック"){
+                                        $service_class = "omakase";
+                                    } else if($service == "相続税申告"){
+                                        $service_class = "inherit_return";
+                                    } else if($service == "相続手続き"){
+                                        $service_class = "inherit_procedure";
+                                    } else if($service == "不動産売買"){
+                                        $service_class = "estate_sale";
+                                    } else if($service == "安心プランニング"){
+                                        $service_class = "safe_planning";
+                                    } else if($service == "相続税診断"){
+                                        $service_class = "tax_diagnosis";
+                                    } else if($service == "不動産コンサルティング"){
+                                        $service_class = "estate_consult";
+                                    } else if($service == "不動産投資コンサルティング"){
+                                        $service_class = "estate_investment";
+                                    } else if($service == "事業承継"){
+                                        $service_class = "business_succession";
+                                    } else if($service == "贈与サポート"){
+                                        $service_class = "gift_support";
+                                    } else if($service == "【相続税診断付き】公正証書遺言作成"){
+                                        $service_class = "notarized";
+                                    } else if($service == "民事信託"){
+                                        $service_class = "civil_trust";
+                                    } else if($service == "法人活用簡易コンサル"){
+                                        $service_class = "corporate_use";
+                                    } else if($service == "地主の方へご提案"){
+                                        $service_class = "landlords";
+                                    } else if($service == "相続税還付"){
+                                        $service_class = "tax_refund";
+                                    } else if($service == "お助け税務調査"){
+                                        $service_class = "tax_investigation";
+                                    } else if($service == "相続のせんせい"){
+                                        $service_class = "teacher_inheritance";
+                                    } 
+                            ?>
+                                <div class="list tax_return">
+                                    <div class="<?php echo $service_class; ?>">
+                                        <p class="txt_content"><?php echo $service; ?></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="list">
-                                <p class="txt_content">不動産投資コンサルティング</p>
-                            </div>
-                            <div class="list">
-                                <p class="txt_content">お助け税務調査</p>
-                            </div>
+                            <?php
+                                }
+                            ?>                            
                         </div>
+
                         <?php $scf_evaluation = SCF::get("voice_evaluation"); ?>
                         <div class="detail_eval_block">
 
