@@ -2581,17 +2581,31 @@ inherit_specialist_sec start =============== */
     line-height: 1.7;
     background: #fff;
     padding: 17px 10px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.txt_content::before{
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: #c10000;
+    clip-path: circle(50% at 1% 50%);
+    position: absolute;
+    left: -3px;
+    top: 0;
 }
 
 .tax_return > div{
     position: relative;
-    padding-left: 65px;
+    padding-left: 30px;
 }
 
 .tax_return .omakase::after{
     content: "";
     background: url(../img/voice/omakase_img.png) no-repeat;
-    width: 60px;
+    width: 65px;
     height: 60px;
     position: absolute;
     top: 0;
