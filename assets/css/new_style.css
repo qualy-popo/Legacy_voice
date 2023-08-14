@@ -2091,7 +2091,7 @@ inherit_specialist_sec start =============== */
 
 .legacy_voice_mv .inner_tax_mv .mv_title {
   font-size: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 
 .legacy_voice_mv .inner_tax_mv .mv_title p:first-child {
@@ -2197,7 +2197,7 @@ inherit_specialist_sec start =============== */
 }
 
 .cus_satisfaction_sec .sub_container {
-  /* max-width: 920px; */
+  max-width: 920px;
   padding: 0 30px;
   margin: 0 auto;
   width: unset;
@@ -2333,7 +2333,7 @@ inherit_specialist_sec start =============== */
 
 /* voice section */
 .voice_container {
-  max-width: 980px;
+  max-width: 920px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -2354,18 +2354,17 @@ inherit_specialist_sec start =============== */
 }
 
 .voice_card {
-  font-family: "HiraKakuPro-W6";
   background: #faf7f7;
   padding-bottom: 20px;
   font-weight: 600;
 }
 
-.voice_card > a{
+.voice_card > a {
   display: block;
   height: 100%;
 }
 
-.voice_card > a:hover{
+.voice_card > a:hover {
   text-decoration: none;
 }
 
@@ -2465,7 +2464,6 @@ inherit_specialist_sec start =============== */
   margin-bottom: 10px;
 }
 .voice_card .voice_txt {
-  font-family: HiraKakuPro-W3;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0;
@@ -2633,9 +2631,10 @@ inherit_specialist_sec start =============== */
 }
 
 /* voice detail start */
-.voice_page_detail {
-  font-family: HiraKakuPro-W6;
-  font-size: 16px;
+.voice_page {
+  line-height: 1.2;
+  font-family: "ヒラギノ角ゴ Pro W3", Helvetica, "Hiragino Kaku Gothic Pro",
+    "ＭＳ Ｐゴシック", sans-serif;
 }
 
 .voice_detail .detail_head_txt {
@@ -2668,6 +2667,8 @@ inherit_specialist_sec start =============== */
 .voice_detail_bg {
   background-color: #faf7f7;
   padding: 20px 40px 40px;
+  font-family: "ヒラギノ角ゴ Pro W3", Helvetica, "Hiragino Kaku Gothic Pro",
+    "ＭＳ Ｐゴシック", sans-serif;
 }
 
 .voice_head_txt {
@@ -2711,7 +2712,6 @@ inherit_specialist_sec start =============== */
   margin-top: 20px;
   word-break: break-word;
   line-height: 1.5;
-  font-family: "HiraKakuPro-W3";
 }
 
 .voice_content_bg {
