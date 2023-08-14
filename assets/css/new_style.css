@@ -2356,6 +2356,16 @@ inherit_specialist_sec start =============== */
   font-family: "HiraKakuPro-W6";
   background: #faf7f7;
   padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.voice_card > a{
+  display: block;
+  height: 100%;
+}
+
+.voice_card > a:hover{
+  text-decoration: none;
 }
 
 .voice_card .card_head {
@@ -2376,7 +2386,7 @@ inherit_specialist_sec start =============== */
 .voice_card .profile > span:not(:first-child)::before {
   content: "/";
   position: absolute;
-  top: 3px;
+  top: -3px;
   left: -12px;
 }
 
@@ -2407,8 +2417,8 @@ inherit_specialist_sec start =============== */
 
 .star {
   display: inline-block;
-  width: 22px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   background-color: #c8c6c6;
   clip-path: polygon(
     50% 0%,
@@ -2434,6 +2444,7 @@ inherit_specialist_sec start =============== */
 
 .rating_num {
   font-size: 20px;
+  margin-top: -5px;
 }
 /* rating end */
 
@@ -2457,6 +2468,7 @@ inherit_specialist_sec start =============== */
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0;
+  font-weight: 500;
 }
 
 .voice_card .card_footer {
