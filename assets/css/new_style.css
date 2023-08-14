@@ -2755,3 +2755,106 @@ inherit_specialist_sec start =============== */
 }
 
 /* voice detail end */
+
+/* pagination start */
+
+.voice_page_detail .relation-btn {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.voice_page_detail .btn-block {
+  width: 33.33%;
+}
+
+.voice_page_detail .btn-block.mid {
+  display: flex;
+  justify-content: center;
+}
+
+.voice_page_detail .btn-block.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.voice_page_detail .relation-btn .btn p,
+.voice_page_detail .relation-btn .btn a {
+  display: inline-block;
+
+  font-size: 20px;
+
+  color: #000;
+}
+
+.voice_page_detail .relation-btn .prev-btn a,
+.voice_page_detail .relation-btn .next-btn a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  color: #543f22;
+  border-bottom: 2px solid #543f22;
+  background: none;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+.voice_page_detail .relation-btn .prev-btn a {
+  padding: 4px 0 4px 25px;
+}
+
+.voice_page_detail .relation-btn .next-btn a {
+  padding: 4px 25px 4px 0;
+}
+
+.voice_page_detail .relation-btn .prev-btn a:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 11px;
+  height: 16px;
+
+  content: "";
+  transform: translateY(-50%);
+
+  background: url(../img/voice/detail_left_arr.png) center no-repeat;
+  background-size: contain;
+}
+
+.voice_page_detail .relation-btn .btn02 a {
+  width: 200px;
+  padding: 20px 15px 20px 15px;
+
+  text-align: center;
+
+  color: #fff;
+  background: #543f22;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.voice_page_detail .relation-btn .next-btn a:after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  width: 11px;
+  height: 16px;
+
+  content: "";
+  transform: translateY(-50%);
+
+  background: url(../img/voice/detail_right_arr.png) center no-repeat;
+  background-size: contain;
+}
+
+.voice_page_detail .relation-btn .prev-btn a:hover,
+.voice_page_detail .relation-btn .next-btn a:hover,
+.voice_page_detail .relation-btn .btn02 a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* pagination end */
