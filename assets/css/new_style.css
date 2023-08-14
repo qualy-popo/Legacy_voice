@@ -2619,12 +2619,6 @@ inherit_specialist_sec start =============== */
   background: url(../img/voice/teacher_inherit_img01.png) no-repeat;
 }
 
-@media screen and (max-width: 768px) {
-  .voice_detail_bg {
-    padding: 20px;
-  }
-}
-
 /* voice detail start */
 .voice_page_detail {
   font-family: HiraKakuPro-W6;
